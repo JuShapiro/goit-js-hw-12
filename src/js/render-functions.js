@@ -14,10 +14,10 @@ function createImageMarkup(arr) {
       <a class="item-link" href="${largeImageURL}">
       <img src="${webformatURL}" alt="${tags}"></a>
       <div class="img-desc">
-        <h2 class="title">Likes <p class="p">${likes}</p></h2>
-        <h2 class="title">Views <p class="p">${views}</p></h2>
-        <h2 class="title">Comments <p class="p">${comments}</p></h2>
-        <h2 class="title">Downloads <p class="p">${downloads}</p></h2>
+        <p class="prop">Likes <span class="value">${likes}</span></p>
+        <p class="prop">Views <span class="value">${views}</span></p>
+        <p class="prop">Comments <span class="value">${comments}</span></p>
+        <p class="prop">Downloads <span class="value">${downloads}</span></p>
       </div>
       
       </li>`
