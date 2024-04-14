@@ -98,13 +98,13 @@ function checkLastPage(totalHits) {
   lastPage = Math.ceil(totalHits / 15);
   if (page < lastPage) {
     loadMoreButton.classList.remove('is-hidden');
-  }
-  if (page === lastPage) {
+  } else if (page === lastPage) {
     iziToast.info({
       message: "We're sorry, but you've reached the end of search results.",
       position: 'topRight',
       backgroundColor: 'blue',
       messageColor: '#000',
     });
+    loadMoreButton.classList.add('is-hidden');
   }
 }
